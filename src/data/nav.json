@@ -1,0 +1,14 @@
+[
+  {
+    "text": "Form", 
+    "path": "/"
+  },
+  {
+    "text": "Sales", 
+    "path": "/sales"
+  },
+  {
+    "text": "History",
+    "path": "/history"
+  }
+]
