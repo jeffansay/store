@@ -10,12 +10,12 @@ const Home = ({flag, submit, handleChange, value}) => {
             <div className="home-content l-padding">
               {flag.success ? 
               <div className='home-status success'>
-                <Alert text='Sucessful' className='success'/> 
+                <Alert text='System: Amount is registered to the system' className='success'/> 
               </div>
               : ''}
               {flag.danger ?
                 <div className='home-status danger'>
-                  <Alert text='Cant submit if the input field is empty' className='danger'/> 
+                  <Alert text='Input field is required' className='danger'/> 
                 </div> : ''
               }
               <form action="" onSubmit={submit}>

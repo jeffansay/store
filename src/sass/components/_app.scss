@@ -1,11 +1,17 @@
 .app-content-list {
   display: flex;
-  justify-content: flex-end;
   padding: 17px;
   font-size: 16px;
   border: 1px solid;
   margin-top: 10%;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  background: #2D374D;
+  border: 1px solid #2D374D;
+
+  .store-name {
+    color: white;
+    margin-right: auto;
+  }
 }
 

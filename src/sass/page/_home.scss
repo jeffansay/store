@@ -2,9 +2,10 @@
   border-bottom: 1px solid;
   border-left: 1px solid;
   border-right: 1px solid;
-  padding: 20px 0;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  background: #F5F7FB;
+  padding: 25px 0 47px;
 }
 
 .home-content-input {
@@ -13,46 +14,50 @@
 }
 
 .home-content-inner-input {
-  border: 1px solid black;
+  border: 1px solid #ada9a9;
   outline: none;
   height: 20px;
   font-size: 15px;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
 }
 
 .home-content-span {
+  padding-top: 8px;
   letter-spacing: 0.03em;
 }
 
 .home-status {
-
-  padding: 5px;
   margin-bottom: 8px;
-  color: white;
 
   &.danger {
-    background: rgb(197, 25, 25)
+    color: #ec1010;
   }
 
   &.success {
-    background: #56bd56;
+    color: #17ad17c7;
   }
 }
 
 .home-content-btn{
-  background: rgb(226, 193, 8);
+  background: #4D95F7;
   font-size: 17px;
   width: 100%;
   height: 33px;
   border: none;
+  margin-top: 17px;
   color: rgb(15, 15, 15);
   outline: none;
   transition: all 0.5s ease;
 
   &:hover {
-    background: rgb(209, 178, 4);
+    background: rgb(63, 116, 190);
     color: white;
   }
 }

@@ -6,30 +6,7 @@ let CanvasJS = CanvasJSReact.CanvasJS;
 
 
 
-const History = ({test, total, testOne}) => {
-
-  console.log(testOne, 'history.js')
-  const holder = [];
-  // const [dataStorage, setDataStorage] = useState([]);
-  const list = total.map((gross, ) => {
-    return (holder.push({x: new Date(`${gross.dates}`), y: gross.total}))
-  })
-
-  const save = e => {
-    if(test) {
-      // setData
-      localStorage.setItem('test', JSON.stringify(holder))
-    //   // getData
-    //  const holdItemDataRefresh = localStorage.getItem('test');
-    //   setDataStorage([holdItemDataRefresh]);
-
-    }
-  }
-
-  useEffect(() => {
-    save()
-  }, [test])
-
+const History = ({init}) => {
   const options = {
     animationEnabled: true,
     theme: "light2",
@@ -59,22 +36,30 @@ const History = ({test, total, testOne}) => {
       type: "area",
       xValueFormatString: "DD MMM",
       yValueFormatString: "php##0.00",
-      dataPoints: holder
+      dataPoints: init
     }]
   }
 
-
-  // console.log(dataStorage)
+  if(init.length !== 0) {
     return (
-        <div className='history'>
-          <div className="history-content l-padding">
-            <h1 className="history-content-tag">Name of Store Tracker</h1>
-            <CanvasJSChart options = {options} />
-
-          </div>
-			
+      <div className='history'>
+        <div className="history-content l-padding">
+          <h1 className="history-content-tag">Name of Store Tracker</h1>
+          <CanvasJSChart options = {options} />
         </div>
-    );
+      </div>
+  );
+  } else {
+    return  (
+      <div className="history">
+        <div className="history-content l-padding">
+          <p className='history-content-result'>No Save Result</p>
+        </div>
+      </div>
+    )
+  }
+
+
 };
 
 export default History;

@@ -5,7 +5,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #f1f1f1;
+    // background: #F5F7FB;
   }
   
 code {
@@ -14,7 +14,7 @@ code {
 }
 
 a {
-  color: #757474;
+  color: #fff;
   letter-spacing: 0.07em;
   text-decoration: none;
   transition: background 0.1s ease, color 0.1s ease;
@@ -24,6 +24,10 @@ a {
 .selected {
   color: rgb(241, 245, 247);
   background: rgb(57, 101, 224);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 
 }
 
